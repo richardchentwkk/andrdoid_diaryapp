@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:id="@+id/readarticle"
+    android:background="#ffa6e8b5">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Date:"
+        android:id="@+id/date"
+        android:layout_marginTop="54dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/back"
+        android:layout_alignEnd="@+id/back" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="3"
+        android:id="@+id/newmon"
+        android:layout_alignTop="@+id/date"
+        android:layout_toLeftOf="@+id/modifyarticle"
+        android:layout_toStartOf="@+id/modifyarticle" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="月"
+        android:id="@+id/monmark"
+        android:layout_alignTop="@+id/newmon"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="7"
+        android:id="@+id/newmonday"
+        android:layout_above="@+id/scrollView"
+        android:layout_toRightOf="@+id/modifyarticle"
+        android:layout_toEndOf="@+id/modifyarticle" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="日"
+        android:id="@+id/day"
+        android:layout_alignTop="@+id/newmonday"
+        android:layout_alignLeft="@+id/delete"
+        android:layout_alignStart="@+id/delete" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:id="@+id/back"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/modifyarticle"
+        android:text="Modify"
+        android:layout_alignTop="@+id/back"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/delete"
+        android:text="Delete"
+        android:layout_alignTop="@+id/modifyarticle"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="380dp"
+        android:layout_below="@+id/date"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="24dp"
+        android:layout_alignRight="@+id/delete"
+        android:layout_alignEnd="@+id/delete"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="0dp"
+        android:id="@+id/scrollView">
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:id="@+id/ShowHistoryText"
+        android:layout_below="@+id/date"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="23dp"
+        android:layout_alignRight="@+id/delete"
+        android:layout_alignEnd="@+id/delete"
+        android:layout_marginBottom="20dp"/>
+    </ScrollView>
+
+
+</RelativeLayout>

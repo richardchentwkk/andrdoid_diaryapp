@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:id="@+id/mainpage">
+
+    <ImageButton
+        android:layout_width="69dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/imagebtn1"
+        android:layout_gravity="right"
+        android:layout_weight="0.10"
+        android:background="#00000000"
+        android:src="@android:drawable/ic_menu_add"
+        android:layout_alignBottom="@+id/analogClock"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="51dp" />
+
+    <AnalogClock
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/analogClock"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listView"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/imagebtn1" />
+
+    <ImageButton
+        android:layout_width="69dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/imagebtn_delete"
+        android:layout_gravity="right"
+        android:layout_weight="0.10"
+        android:background="#00000000"
+        android:src="@android:drawable/ic_menu_close_clear_cancel"
+        android:layout_alignTop="@+id/imagebtn1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>
